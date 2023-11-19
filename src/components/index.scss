@@ -1,0 +1,60 @@
+.nav {
+    margin: 0;
+    padding: 0;
+    background: rgba(10, 10, 10, 0.4);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    .clearfix {
+        width: 100%;
+        list-style: none;
+        display: inline-flex;
+        margin: 0 3vw;
+        padding: 0;
+        line-height: 5vh;
+        font-size: 1.8vh;
+
+        .company {
+            width: 10%;
+            img {
+                height: 4vh;
+            }
+        }
+        .buttonItem {
+            width: 8%;
+            margin: 1vh 0;
+            .button {
+                // display: inline-flex;
+                border: 1px solid #54C9F8;
+                border-radius: 10px;
+                text-align: center; 
+                height: 3vh; 
+                line-height: 3vh;
+                color: #ffffff;
+                padding: 0.5vh 1vw;
+                // margin: 1.5vh 0;
+            }
+        }
+        li {
+            color: #007CAE;
+            padding: 0 1vw;
+            &.active {
+                color: #ffffff;
+                // border-bottom: 2px solid #ffffff;
+                &::after {
+                    content: '';
+                    background: #ffffff;
+                    display: block;
+                    height: 2px;
+                    width: 20px;
+                    padding-left: 1vw;
+                }
+            }
+        }
+        .navLinks {
+            display: inline-flex;
+            width: 72%;
+            justify-content: center;
+        }
+    }
+}

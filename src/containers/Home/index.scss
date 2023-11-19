@@ -1,0 +1,88 @@
+.homepage {
+    background: url(../../assets/Layout/Vector.svg);
+    background-repeat: no-repeat;
+    .topSection {
+        margin: -5vh 5vw;
+        .left {
+            float: left;
+            width: 40%;
+            color: #ffffff;
+            margin-top: 10vh;
+            h2 {
+                font-size: 5vh;
+                margin: 10vh 7vw 2vh 0;
+                // padding: 0 2vw;
+            }
+            .subText {
+                margin: 5vh 5vw 2vh 0; 
+            }
+            .button {
+                // display: inline-flex;
+                margin: 5vh 0; 
+                border: 1px solid #54C9F8;
+                border-radius: 10px;
+                text-align: center; 
+                height: 3vh; 
+                line-height: 3vh;
+                color: #ffffff;
+                padding: 0.5vh 1vw;
+                width: 8vw;
+                font-weight: 600;
+                font-size: 2vh;
+                // margin: 1.5vh 0;
+            }
+        }
+        .right {
+            float: left;
+            width: 60%;
+            margin-top: 10vh;
+            .imgContainer {
+                // display: flex;
+                img {
+                    // height: 100%;
+                    width: 100%;
+                    height: 60vh;
+                    // height: 0%;
+                }
+
+            }
+        }
+    }
+    .midSection {
+        margin: 5vh 5vw;
+        .top {
+            h2 {
+                color: #ffffff;
+                text-transform: capitalize;
+                text-align: center;
+                // max-width: 60vw;
+            }
+        }
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            color: #ffffff;
+            .card {
+                width: 25%;
+                margin-top: 5vh;
+                padding: 1vh 1vw 3vh 1vw;
+                border: 1.5px solid #3ED5DD;
+                text-align: center;
+                position: relative;
+                border-radius: 5px;
+                background: linear-gradient(96.79deg, #171717 -62.94%, #323335 -62.92%, rgba(90, 90, 90, 0) 54.42%, #171717 174.24%);
+
+                .floatingImage {
+                    position: absolute;
+                    left: 42%;
+                    top: -25%;
+                    img {
+                        height: 8vh;
+                    }
+                }
+                
+            }
+        }
+    }
+
+}
