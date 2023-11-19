@@ -19,7 +19,7 @@ import rootSaga from '../sagas';
 
 export const store = configureStore({
     reducer: {
-     login: loginReducer,
+        login: loginReducer,
     }
 })
 

@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function Login() {
-    console.log('here');
+    console.log('Login component');
+    useEffect(() => {
+        redirect()
+    }, [])
     return (
     <div>
         Hey there
