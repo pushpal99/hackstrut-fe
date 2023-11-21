@@ -1,6 +1,7 @@
 .homepage {
     background: url(../../assets/Layout/Vector.svg);
     background-repeat: no-repeat;
+    color: #ffffff;
     .topSection {
         margin: -5vh 5vw;
         .left {
@@ -52,6 +53,7 @@
         margin: 5vh 5vw;
         .top {
             h2 {
+                margin-top: 5vh;
                 color: #ffffff;
                 text-transform: capitalize;
                 text-align: center;
@@ -62,6 +64,7 @@
             display: flex;
             justify-content: space-between;
             color: #ffffff;
+            margin-top: 10vh;
             .card {
                 width: 25%;
                 margin-top: 5vh;
@@ -84,5 +87,104 @@
             }
         }
     }
+    .wrapper {
+        display: flex;
+        margin-top: 15vh;
+        .leftImageContainer {
+            width: 70%;
+            position: relative;
+            height: 60vh;
+            .front {
+                position: absolute;
+                top: 10vh;
+                left: 20%;
+            }
+            .back {
+                height: 60vh;
+            }
+        }
+        .rightListItems {
+            width: 25%;
+            margin-top: 10vh;
+            h2 {
+                font-size: 3.6vh;
+            }
+            ul {
+                padding: 0;
+                padding-top: 1.5vh;
+                li {
+                    list-style: none;
+                    font-size: 1.8vh;
+                    line-height: 2vh;
+                    margin: 3vh 0;
+                    padding-left: 0;
+                    span {
+                        padding-right: 1vh;
+                        line-height: 2vh;
+                        img {
+                            height: 2vh;
 
+                        }
+                    }
+                }
+            }
+        }
+        .bottom {
+            .rightListItems {
+                width: 30%;
+            }
+        }
+    }
+    .bannerSection {
+        margin-top: 15vh;
+        height: 40vh;
+        box-sizing: border-box;
+        box-shadow: 1px 1px 3px 4px rgba(0,0,0,0.62);
+        margin: 15vh 10vw;
+        padding: 2vh 3vw;
+        border-radius: 8px;
+        // background: linear-gradient(95.02deg, #4D7F82 13.23%, #182A3F 81.63%);
+        position: relative;
+
+        h2 {
+            font-size: 5vh;
+        }
+        span {
+            img {
+                position: absolute;
+                height: 30vh;
+                right: 0;
+                top: 5vh;
+            }
+        }
+        .button {
+            // display: inline-flex;
+            margin: 5vh 0; 
+            border: 1px solid #54C9F8;
+            border-radius: 10px;
+            text-align: center; 
+            height: 3vh; 
+            line-height: 3vh;
+            color: #ffffff;
+            padding: 0.5vh 1vw;
+            width: 8vw;
+            font-weight: 600;
+            font-size: 2vh;
+            // margin: 1.5vh 0;
+        }
+    }
+    .about {
+        margin: 15vh 10vw;
+        position: relative;
+        width: 40vw;
+        font-size: 1.8vh;
+        span {
+            position: absolute;
+            left: -5vw;
+            top: -5.5vh;
+            img {
+                height: 15vh;
+            }
+        }
+    }
 }
