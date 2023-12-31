@@ -4,9 +4,7 @@ import Logo from '../assets/Layout/logo.svg'
 import c from 'classnames';
 import './index.scss'
 
-const Layout = () => {
-    const [activeLink, setActiveLink] = useState(0);
-    console.log(activeLink)
+const Layout = ({ activeLink, setActiveLink}) => {
     return (
         <div className='nav'>
             <ul className='clearfix'>

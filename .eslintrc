@@ -1,6 +1,6 @@
 {
     "parser": "@babel/eslint-parser",
-    "extends": ["airbnb", "prettier", "plugin:prettier/recommended", "prettier/react"],
+    "extends": ["prettier", "plugin:prettier/recommended", "prettier/react"],
     "plugins": ["react", "babel", "prettier", "mocha"],
     "parserOptions": {
       "ecmaVersion": 6,

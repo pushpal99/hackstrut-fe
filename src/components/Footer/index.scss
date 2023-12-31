@@ -1,0 +1,31 @@
+.footer  {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 4vw;
+    color: #ffffff;
+    font-size: 1.6vh;
+    .quickLinks {
+        display: flex;
+        div {
+            margin: 0 1vw;
+        }
+    }
+    .left {
+        font-size: 1.2vh;
+        span {
+            img {
+                width: 14px;
+                height: 14px;
+                margin-right: 0.2vw;
+            }
+        }
+    }
+    input {
+        width: 100%;
+        background: #071214;
+        padding: 1vh 1vh;
+        margin: 1vh 0;
+        border: none;
+        font-size: 1.6vh;
+    }
+}

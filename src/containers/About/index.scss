@@ -1,0 +1,91 @@
+.homepage {
+    
+   .topBanner {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    // display: flex;
+    // justify-content: center;
+    img {
+        width: 100%;
+        margin: -5vh 0;
+    }
+   }
+   .aboutWrapper {
+    background: none;
+    padding: 10vh 0;
+        .midSection {
+            margin-top: 10vh;
+            text-align: center;
+            .subInfo {
+                width: 60%;
+                margin: auto;
+            }
+
+            .bottom {
+                justify-content: center;
+                .card {
+                    margin-left: 1vh;
+                    width: 40%;
+                    padding: 2vh 2vw;
+                    &.small {
+                        padding: 0;
+                    }
+                    
+                }
+                &.smallCardContainer {
+                    width: 60%;
+                    flex-wrap: wrap;
+                    margin: auto;
+                    display: flex;
+                    .card {
+                        display: flex;
+                        justify-content: center;
+                        // justify-content: space-between;
+                        span {
+                            // line-height: 100%;
+                            // width: 30%;
+                            // border: 1px solid red;
+                            display: block;
+                        }
+                        h3 {
+                            display: block;
+                            width: 60%;
+                            margin-left: -2vh;
+                            // border: 1px solid red;
+                            font-size: 2vh;
+                        }
+
+                    }
+                    
+                }
+            }
+        }
+
+        .bottomSection {
+            margin: 10vh auto;
+            // border: 1px solid red;
+            width: 60%;
+            text-align: center;
+            h1 {
+                text-align: center;
+            }
+            .listItems {
+                padding: 2vh 0;
+                text-align: justify;
+            }
+            .imgContainer {
+                img {
+                    max-height: 30vh;
+                }
+            }
+            h4 {
+                margin: 1vh 0;
+            }
+            .photoInfo {
+                margin: 2vh auto;
+                font-weight: 400;
+            }
+        }
+   }
+}
