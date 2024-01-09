@@ -1,0 +1,98 @@
+.contactUsWrapper {
+    padding: 15vh 15vw;
+    .formSection{
+        // margin-top: 15vh;
+        // height: 40vh;
+        display: flex;
+        align-items: flex-start;
+        box-sizing: border-box;
+        box-shadow: 1px 1px 3px 4px rgba(0,0,0,0.62);
+        // margin: 15vh 10vw;
+        padding: 2vh 3vw;
+        border-radius: 8px;
+        border: 1px solid #54C9F8;
+        position: relative;
+        .leftSection {
+            width: 55%;
+            // border: 1px solid red;
+        }
+        .rightSection {
+            width: 45%;
+            // border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            .imgContainer {
+                // border: 1px solid red;
+                padding-bottom: 5vh;
+                margin: 0;
+                padding: 0;
+                img {
+                    width: 35vh;
+                    height: 35vh;
+                    // position: absolute;
+                    // top: 0;
+                }
+            }
+        }
+        .MuiInput-input {
+            color: #999999;
+        }
+        .MuiFormGroup-root {
+            margin-right: 0;
+            padding-right: 0;
+            .MuiInput-root {
+                width: 47.5%;
+                &:last-child {
+                    margin: 1vh 0 1vh 1vh;
+                }
+            }
+        }
+        .MuiInput-root {
+            padding: 0.5vh 0.5vw;
+            margin: 1vh 1vw 1vh 0;
+            background: #09171A;
+            font-size: 1.6vh;
+            border-radius: 5px;
+            &::after {
+                display: none;
+            }
+            &::before {
+                display: none;
+            }
+        }
+        .MuiInputBase-root {
+            border: none;
+        }
+        .MuiSelect-select {
+            border: none;
+            background: #09171A;
+            margin: 1vh;
+            padding: 0;
+            // padding: 0.8vh;
+            border-radius: 5px;
+            em {
+                font-style: normal;
+            }
+        }
+        .selectInput {
+            .MuiInput-root {
+                padding: 0;
+            }
+        }
+        button {
+            background: #54c9f8;
+            color: #000000;
+            font-weight: 600;
+            text-transform: none;
+            width: 40%;
+            font-size: 1.8vh;
+            margin: 2vh 0;
+        }
+    }
+}
+
+.MuiPaper-root {
+    .MuiMenuItem-root {
+        font-size: 1.6vh;
+    }
+}

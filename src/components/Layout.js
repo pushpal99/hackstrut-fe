@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { forwardRef, useEffect, useState } from 'react';
 import { NAV_LINKS } from '../utils/constants';
 import Logo from '../assets/Layout/logo.svg'
 import c from 'classnames';

@@ -6,5 +6,8 @@ export const NAV_LINKS = [{
 },
 {
     title: 'About'
+},
+{
+    title: 'Contact Us'
 }
 ]
