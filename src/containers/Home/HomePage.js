@@ -20,6 +20,11 @@ const HomePage = ({ activeLink }) => {
     useEffect(() => {
         if(activeLink === 1) {
             handleClick();
+        } else {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
         }
     }, [activeLink])
 
