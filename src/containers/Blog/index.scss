@@ -1,0 +1,31 @@
+.blogWrapper {
+    padding: 5vh 8vw;
+    h2 {
+        font-size: 4vh;
+    }
+    .blogCardContainer {
+        display: flex;
+        justify-content: space-between;
+        .card {
+            &.blogCard {
+                max-width: 20%;
+                background: #ffffff;
+                border-radius: 17px;
+                color: #000000;
+                img {
+                    width: 100%;
+                }
+                h3 {
+                    padding: 0 1vw;
+                    font-size: 2vh;
+                }
+                .description {
+                    padding: 0 1vw 2vh 1vw;
+                    text-align: justify;
+                    font-size: 1.6vh;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

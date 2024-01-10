@@ -11,6 +11,10 @@ import VulMgmt from '../../assets/About/VulMgmt.png';
 import RealTime from '../../assets/About/RealTimeMonitoring.png';
 import ThreatDetect from '../../assets/About/ThreatDetect.png';
 import IncidentMgmt from '../../assets/About/IncidentMgmt.png';
+import Blog1 from '../../assets/Blogs/BlogImage1.png';
+import Blog2 from '../../assets/Blogs/BlogImage2.png';
+import Blog3 from '../../assets/Blogs/BlogImage3.png';
+import Blog4 from '../../assets/Blogs/BlogImage4.png';
 
 export const SITE_TEXT = {
     HOMEPAGE_HEADING: 'AI Powered Security Monitoring System',
@@ -117,4 +121,42 @@ export const SITE_TEXT = {
     ],
     ABOUT_SUB_INFO_3: 'Founder & CEO of Francordsoft and Hackstrut',
     PHOTO_TAG: 'Founder & CEO',
+    HOMEPAGE_SUB_TXT_2: "Choose Hackstrut for a comprehensive cybersecurity solution tailored to your organization's needs. Elevate your security posture, respond effectively to threats, and benefit from ongoing support. Embrace a secure digital future with Hackstrut.",
+    BLOG_PAGE_CARD: [
+        {
+            title: 'Future of Threat Intelligence',
+            imgSrc: Blog1,
+            desc: 'Navigating Evolving Cyber Threats with Advanced Threat Intelligence Strategies',
+        },
+        {
+            title: 'Securing Remote Work: Best Practices for the Digital Era',
+            imgSrc: Blog2,
+            desc: 'A Comprehensive Guide to Ensuring Cybersecurity in the Remote Work Landscape',
+        },
+        {
+            title: 'Blockchain and Cybersecurity: A Powerful Duo',
+            imgSrc: Blog3,
+            desc: 'Unveiling the Impact of Blockchain Technology on Enhancing Digital Security'
+        },
+        {
+            title: 'Ransomware Protection Strategies: Beyond the Basics',
+            imgSrc: Blog4,
+            desc: 'Advanced Tactics to Safeguard Your Organization Against Ransomware Attacks'
+        }
+    ],
+    HOMEPAGE_CARD2: [
+        {
+            title: 'Robust Threat Detection',
+            desc: 'Hackstrut employs advanced AI algorithms for real-time threat detection, identifying and neutralizing potential security risks before they impact your organization.'
+        },
+        {
+            title: 'Efficient Incident Response',
+            desc: "Swiftly respond to security incidents with Hackstrut's automated incident response features, minimizing the impact and ensuring a quick return to normal operations",
+        },
+        {
+            title: 'Seamless Integration',
+            desc: 'Integrate Hackstrut seamlessly into your existing systems, creating a cohesive cybersecurity infrastructure without disruptions to your daily operations',
+        }
+    ],
+    BLOG_PAGE_HEAD: 'Explore Cybersecurity Insights',
 }

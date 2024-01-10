@@ -6,8 +6,10 @@ import AboutIcon from '../../assets/Layout/about_home_icon.svg';
 import Vul from '../../assets/Layout/Vul.svg';
 import HomeImg from '../../assets/Layout/Home.svg'
 import Vul2 from '../../assets/Layout/Vul2.svg';
-import Home2Img from '../../assets/Layout/Home2.svg'
+import Home2Img from '../../assets/Layout/Home2.svg';
+import Laptop from '../../assets/Layout/laptop.png'
 import './index.scss';
+import Blog from "../Blog/Blog";
 
 const HomePage = ({ activeLink }) => {
 
@@ -38,6 +40,8 @@ const HomePage = ({ activeLink }) => {
         ABOUT_DESC,
         THREAT_DETECTION_OPT,
         VULNERABILITY_OPT,
+        HOMEPAGE_SUB_TXT_2,
+        HOMEPAGE_CARD2,
     } = SITE_TEXT;
     return (
         <><div className="topSection">
@@ -112,7 +116,30 @@ const HomePage = ({ activeLink }) => {
                     <img src={Vul2} style={{ left: '-2%' }} className="front" />
                 </div>
             </div>
-            <div className="bannerSection" ref={ref}>
+            <div className="advSection">
+                <div className="adv">
+                    <div className="leftImageContainer">
+                        <img src={Laptop} />
+                    </div>
+                    <div className="rightItems">
+                        <div>
+                            <h2>EXPERIENCE THE ADVANTAGE</h2>
+                            {HOMEPAGE_SUB_TXT_2}
+                        </div>
+                    </div>
+                </div>
+                <div className="cardContainer">
+                    {HOMEPAGE_CARD2.map(({title, desc}) => {
+                        return (
+                            <div className="card">
+                                <h3>{title}</h3>
+                                <div>{desc}</div>
+                            </div>
+                        )   
+                    })}
+                </div>
+            </div>
+            <div className="bannerSection">
                 <h2>{SUPERCHARGE_HEAD_TXT}</h2>
                 <div>
                     {SUPERCHARGE_SUB_HEAD}
@@ -123,7 +150,11 @@ const HomePage = ({ activeLink }) => {
                 <span>
                     <img src={Supercharge} />
                 </span>
-            </div><div className="about">
+            </div>
+            <div className="blog" ref={ref}>
+                <Blog />
+            </div>
+            <div className="about">
                 <h3><span className="aboutIcon"><img src={AboutIcon} alt="" /></span>Who We Are?</h3>
                 <div>
                     {ABOUT_DESC}

@@ -173,6 +173,36 @@
             // margin: 1.5vh 0;
         }
     }
+    .advSection {
+        padding: 7vh 5vw;
+        margin-top: 15vh;
+        border: 1.5px solid #3ED5DD;
+        border-left: none;
+        border-right: none;
+        .adv {
+            display: flex;
+            justify-content: center;
+            .rightItems {
+                display: flex;
+                align-items: center;
+                width: 40%;
+                padding-left: 3vw;
+            }
+        }
+        .cardContainer {
+            margin-top: 5vh;
+            display: flex;
+            justify-content: space-between;
+            .card {
+                box-sizing: border-box;
+                box-shadow: 1px 1px 3px 4px rgba(0,0,0,0.62);
+                border-radius: 10px;
+                max-width: 31%;
+                text-align: center;
+                padding: 0 1vw 2vh 1vw;
+            }
+        }
+    }
     .about {
         margin: 15vh 10vw;
         position: relative;
