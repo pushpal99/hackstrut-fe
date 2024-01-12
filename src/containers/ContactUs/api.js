@@ -2,7 +2,10 @@ import axios from "axios";
 import Endpoints from "../../Endpoints";
 
 export const postContactDetails = payload => {
-    const { userContact } = Endpoints;
-    axios.post(userContact, payload).catch(err, console.log(err));
+    const { userContact, apiBasePath } = Endpoints;
+    console.log(`${apiBasePath}${userContact}`);
+    axios
+    .post(`${apiBasePath}${userContact}`, payload)
+    // .catch((err) => console.log(err));
 }
 
