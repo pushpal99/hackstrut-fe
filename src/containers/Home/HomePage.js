@@ -13,22 +13,22 @@ import Blog from "../Blog/Blog";
 
 const HomePage = ({ activeLink }) => {
 
-    const ref = useRef(null)
+    // const ref = useRef(null)
 
-    const handleClick = () => {
-        ref.current?.scrollIntoView({behavior: 'smooth'});
-    };
+    // const handleClick = () => {
+    //     ref.current?.scrollIntoView({behavior: 'smooth'});
+    // };
 
-    useEffect(() => {
-        if(activeLink === 1) {
-            handleClick();
-        } else {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth",
-            });
-        }
-    }, [activeLink])
+    // useEffect(() => {
+    //     if(activeLink === 1) {
+    //         handleClick();
+    //     } else {
+    //         window.scrollTo({
+    //             top: 0,
+    //             behavior: "smooth",
+    //         });
+    //     }
+    // }, [activeLink])
 
     const { 
         HOMEPAGE_HEADING,
@@ -151,9 +151,9 @@ const HomePage = ({ activeLink }) => {
                     <img src={Supercharge} />
                 </span>
             </div>
-            <div className="blog" ref={ref}>
+            {/* <div className="blog" ref={ref}>
                 <Blog />
-            </div>
+            </div> */}
             <div className="about">
                 <h3><span className="aboutIcon"><img src={AboutIcon} alt="" /></span>Who We Are?</h3>
                 <div>

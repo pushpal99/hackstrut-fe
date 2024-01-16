@@ -9,15 +9,17 @@ import HomePage from "./HomePage";
 const Home = () => {
     const [activeLink, setActiveLink] = useState(0);
 
+    console.log(activeLink);
+
     const renderPage = () => {
         switch(activeLink) {
             case 0:
                 return <HomePage activeLink={activeLink} />;
-            case 1:
-                return <HomePage activeLink={activeLink} />
-            case 2: 
+            // case 1:
+            //     return <HomePage activeLink={activeLink} />
+            case 1: 
                 return <About />;
-            case 3:
+            case 2:
                 return <ContactUs />
             default: 
                 return <Fragment />
