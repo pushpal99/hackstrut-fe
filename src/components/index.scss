@@ -5,7 +5,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 1;
     .clearfix {
         width: 100%;
         list-style: none;
@@ -36,6 +36,9 @@
                 // margin: 1.5vh 0;
             }
         }
+        .dropDown {
+            display: none;
+        }
         li {
             color: #007CAE;
             padding: 0 1vw;
@@ -63,11 +66,6 @@
 
 //mediaquery
 
-   /* Extra Small Devices, Phones */ 
-   @media only screen and (min-width : 480px) {
-    
-   }
-
 @media screen and (min-width: 100px) and (max-width: 768px) {
     body {
         overflow-x: hidden !important;
@@ -75,6 +73,7 @@
     .nav {
         width: 100%;
         overflow-x: hidden !important;
+        position: relative;
         // margin: 0;
         // padding: 0;
         // background: rgba(10, 10, 10, 0.4);
@@ -83,6 +82,8 @@
         // width: 100%;
         // z-index: 10;
         .clearfix {
+            // justify-content: space-between;
+            // align-items: center;
             // width: 100%;
             // list-style: none;
             // display: inline-flex;
@@ -127,23 +128,49 @@
             //         }
             //     }
             // }
+            .dropDown {
+                display: block;
+                margin: 1% 8%;
+                position: absolute;
+                right: 0;
+                z-index: 3;
+            }
             .navLinks {
                 display: none;
-                width: 72%;
+                width: 100%;
                 justify-content: center;
+                &.dropView {
+                    display: flex;
+                    width: 100%;
+                    position: fixed;
+                    flex-direction: column;
+                    right: 0;
+                    top: 0;
+                    background: #141C23;
+                    z-index: 2;
+                    padding: 5vh 1vw;
+                    li {
+                        // height: rem(4);
+                        margin: 1vh 5vw;
+                        &.active {
+                            color: #B0E6FC;
+                            // border-bottom: 2px solid #ffffff;
+                            &::after {
+                                // content: '';
+                                // background: #ffffff;
+                                display: none;
+                                // height: 2px;
+                                // width: 20px;
+                                // padding-left: 1vw;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
   }
 
-  @media (30em <= width <= 50em) {
-    /* … */
-    .nav {        
-        .navLinks {
-            display: none;
-        }
-    }
-  }
 
 //    /* Small Devices, Tablets */
 //    @media only screen and (min-width : 768px) {

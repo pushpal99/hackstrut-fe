@@ -10,6 +10,8 @@ import Home2Img from '../../assets/Layout/Vul.svg';
 import Laptop from '../../assets/Layout/laptop.png';
 import Dot from '../../assets/Layout/dot.png';
 import SelectedDot from '../../assets/Layout/selectedDot.png';
+import Dash from '../../assets/Layout/Dash.png';
+import SelectedDash from '../../assets/Layout/SelectedDash.png';
 import './index.scss';
 import c from 'classnames';
 // import Blog from "../Blog/Blog";
@@ -162,7 +164,7 @@ const HomePage = ({ activeLink }) => {
                 <div className="selectBtn">{HOMEPAGE_CARD2.map((_, i) => {
                 return (
                     <span onClick={() => setSelectedBtm(i)}>
-                        <img src={i === selectedBtm ? SelectedDot : Dot } />
+                        <img src={i === selectedBtm ? SelectedDash : Dash } />
                     </span>
                 )
             })}</div>

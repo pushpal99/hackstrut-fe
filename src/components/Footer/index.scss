@@ -20,12 +20,68 @@
             }
         }
     }
-    input {
-        width: 100%;
-        background: #071214;
-        padding: 1vh 1vh;
-        margin: 1vh 0;
-        border: none;
-        font-size: 1.6vh;
+    .newsLetter {
+        .mailInput {
+            display: flex;
+            align-items: center;
+            input {
+                height: 2vh;
+                background: #071214;
+                padding: 1.1vh 1vh;
+                margin: 1vh 0;
+                border: none;
+                font-size: 1.6vh;
+            }
+            span {
+                background: #A5FDFD;
+                padding: inherit;
+                padding: 1vh 1vh;
+                margin: 0 0 0 0.2vw;
+                height: 2vh;
+                display: flex;
+                align-items: center;
+
+            }
+        }
+
     }
 }
+
+@media screen and (min-width: 100px) and (max-width: 768px) {
+   .footer {
+        width: 100% !important;
+        height: 55vh;
+        display: block;
+        // flex-direction: column;
+        .left {
+            width: 50%;
+            float: left;
+            .mediaLink {
+                display: flex;
+                flex-direction: column;
+                span {
+                    margin: 1vh 0;
+                }
+            }
+        }
+        .right {
+            width: 50%;
+            float: left;
+        }
+        .quickLinks{
+            flex-direction: column;
+            div {
+                margin: 1vh 0;
+            }
+        }
+        .newsLetter {
+            float: left;
+            clear: both;
+            margin-top: 2vh;
+            width: 90%;
+            input {
+                width: 90%;
+            }
+        }
+   }
+  }

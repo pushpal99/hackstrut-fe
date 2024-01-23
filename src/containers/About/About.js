@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { SITE_TEXT } from "../Home/constants";
 import Supercharge from '../../assets/Layout/Supercharge.png';
 import AboutBanner from '../../assets/About/AboutBanner.png';
 import PotraitImg from '../../assets/About/PotraitImg.png';
+// import Photo from '../../assets/Layout/Home.jpeg';
 import linkdInIcon from '../../assets/Footer/linkdIn.png';
+import Dash from '../../assets/Layout/Dash.png';
+import SelectedDash from '../../assets/Layout/SelectedDash.png';
+import c from 'classnames';
 import './index.scss';
 import { Fragment } from "react";
 
 const About = () => {
+    const [selected, setSelected] = useState(0);
     const {  
         SUPERCHARGE_HEAD_TXT, 
         SUPERCHARGE_SUB_HEAD,
@@ -63,14 +68,24 @@ const About = () => {
             <h1>{ABOUT_HEAD_3}</h1>
             <div className="bottom">
                 {
-                    ABOUT_PAGE_LIST.map(({ title, desc }) => {
+                    ABOUT_PAGE_LIST.map(({ title, desc }, i) => {
                         return (
-                            <li className="listItems"><strong>{title}: </strong>{desc}</li>
+                            <li className={c({selected: i === selected}, "listItems")}><strong>{title} </strong>{desc}</li>
                         )
                     })
                 }
             </div>
         </div>
+        <div className="selectBtn">
+            {ABOUT_PAGE_LIST.map((_, i) => {
+                return (
+                    <span onClick={() => setSelected(i)}>
+                        <img src={i === selected ? SelectedDash : Dash } />
+                    </span>
+                )
+            })}
+        </div>
+
         <div className="bannerSection">
             <h2>{SUPERCHARGE_HEAD_TXT}</h2>
             <div>

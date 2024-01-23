@@ -90,13 +90,15 @@
             }
         }
         button {
-            background: #54c9f8;
+            background: #A5FDFD;
             color: #000000;
             font-weight: 600;
             text-transform: none;
-            width: 40%;
-            font-size: 1.8vh;
+            width: fit-content;
+            font-size: 1.6vh;
+            padding: 0.5vh 3vw;
             margin: 2vh 0;
+            border-radius: 7px;
         }
     }
 }
@@ -106,3 +108,36 @@
         font-size: 1.6vh;
     }
 }
+
+@media screen and (min-width: 100px) and (max-width: 768px) {
+    .contactUsWrapper {
+        padding-top: 5vh;
+        .formSection{
+            .rightSection {
+                display: none;
+            }
+            .leftSection {
+                width: 100%;
+            }
+            .MuiFormGroup-root {
+                .MuiInput-root {
+                    width: 100%;
+                    padding-left: 1vw;
+                    &:last-child {
+                        margin: 0;
+                        margin: 1vh 0;
+                    }
+                }
+            }
+            .MuiInput-input {
+                padding-left: 10px;
+                font-size: 1.4vh;
+            }
+            button {
+                font-size: 1.4vh;
+                padding: 0.5vh 3vw;
+                margin: 2vh 0;
+            }
+        }
+    }
+  }

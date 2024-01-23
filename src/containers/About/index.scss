@@ -73,6 +73,11 @@
             .listItems {
                 padding: 2vh 0;
                 text-align: justify;
+                strong {
+                    &::after {
+                        content: ': ';
+                    }
+                }
             }
             .imgContainer {
                 img {
@@ -81,11 +86,86 @@
             }
             h4 {
                 margin: 1vh 0;
+                font-size: 2.1vh;
             }
             .photoInfo {
                 margin: 2vh auto;
                 font-weight: 400;
             }
         }
+        .selectBtn {
+            display: none;
+        }
    }
 }
+
+
+
+
+@media screen and (min-width: 100px) and (max-width: 768px) {
+    .homepage {
+        overflow-x: hidden !important;
+        .topBanner {
+         width: 90%;
+        }
+        .aboutWrapper {
+            padding-top: 5vh;
+             .midSection {
+                 .subInfo {
+                     width: 95%;
+                 }
+     
+                 .bottom {
+                     flex-wrap: wrap;
+                     margin-top: 2vh;
+                     .card {
+                         width: 95%;
+                         display: block; 
+                         
+                     }
+                     &.smallCardContainer {
+                         width: 100%;
+                         .card {
+                             width: 45%;    
+                         }
+                         
+                     }
+                 }
+             }
+     
+             .bottomSection {
+                margin-bottom: 2vh;
+                width: 80%;
+                 .listItems {
+                     list-style: none;//
+                     display: none;
+                     strong {
+                        display: block;
+                        margin-bottom: 2vh;
+                        text-align: center;
+                        &::after {
+                            display: none;
+                        }
+                     }
+                     &.selected {
+                        display: block;
+                     }
+                 }
+                .imgContainer {
+                    img {
+                        width: 60%;
+                    }
+                }
+             }
+             .selectBtn {
+                display: block;
+                margin: 2vh auto;
+                width: fit-content;
+                span {
+                    margin-right: 2vw;
+                }
+            }
+        }
+     }
+  
+  }

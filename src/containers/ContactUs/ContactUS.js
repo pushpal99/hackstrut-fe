@@ -78,7 +78,7 @@ const ContactUs = () => {
                                 {country_list.map(country => (<MenuItem value={country}>{country}</MenuItem>) )}
                             </Select>
                         </FormControl>
-                        <Button onClick={handleSubmit} disabled={isDisabled} style={{ opacity: isDisabled ? 0.3 : 1}}>Submit</Button>
+                        <Button onClick={handleSubmit} disabled={isDisabled} style={{ opacity: isDisabled ? 1 : 1}}>Submit</Button>
                         {showError && <div style={{}}>All fields are mandatory</div>}
                     </FormControl>
                 </div>
