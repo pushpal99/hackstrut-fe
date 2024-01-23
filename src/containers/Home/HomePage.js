@@ -1,17 +1,22 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { SITE_TEXT } from "./constants";
 import HomePageShield from '../../assets/Layout/home_shield.svg';
 import Supercharge from '../../assets/Layout/Supercharge.png';
 import AboutIcon from '../../assets/Layout/about_home_icon.svg';
-import Vul from '../../assets/Layout/Vul.svg';
+// import Vul from '../../assets/Layout/Vul.svg';
 import HomeImg from '../../assets/Layout/Home.svg'
-import Vul2 from '../../assets/Layout/Vul2.svg';
-import Home2Img from '../../assets/Layout/Home2.svg';
-import Laptop from '../../assets/Layout/laptop.png'
+// import Vul2 from '../../assets/Layout/Vul2.svg';
+import Home2Img from '../../assets/Layout/Vul.svg';
+import Laptop from '../../assets/Layout/laptop.png';
+import Dot from '../../assets/Layout/dot.png';
+import SelectedDot from '../../assets/Layout/selectedDot.png';
 import './index.scss';
-import Blog from "../Blog/Blog";
+import c from 'classnames';
+// import Blog from "../Blog/Blog";
 
 const HomePage = ({ activeLink }) => {
+    const [selected, setSelected] = useState(0);
+    const [selectedBtm, setSelectedBtm] = useState(0);
 
     // const ref = useRef(null)
 
@@ -63,9 +68,9 @@ const HomePage = ({ activeLink }) => {
                 <h2>{HOMEPAGE_HEADING_2}</h2>
             </div>
             <div className="bottom">
-                {HOMEPAGE_OPTIONS.map(({ title, imgSrc, subText }) => {
+                {HOMEPAGE_OPTIONS.map(({ title, imgSrc, subText }, index) => {
                     return (
-                        <div className="card">
+                        <div className={c({ selected: index === selected}, "card")}>
                             <h3>
                                 {title}
                             </h3>
@@ -74,11 +79,27 @@ const HomePage = ({ activeLink }) => {
                         </div>
                     );
                 })}
-        </div>
+            </div>
+            <div className="selectBtn">{HOMEPAGE_OPTIONS.map((_, i) => {
+                return (
+                    <span onClick={() => setSelected(i)}>
+                        <img src={i === selected ? SelectedDot : Dot } />
+                    </span>
+                )
+            })}</div>
+            {/* <div className="bottom mobile">
+                <div className="card">
+                    <h3>
+                        {HOMEPAGE_OPTIONS[selected].title}
+                    </h3>
+                    <div className="cardSubText">{HOMEPAGE_OPTIONS[selected].subText}</div>
+                    <span className="floatingImage"><img src={HOMEPAGE_OPTIONS[selected].imgSrc} /></span>
+                </div>
+            </div> */}
             </div><div className="midSection wrapper">
                 <div className="leftImageContainer">
                     <img src={HomeImg} className="back" />
-                    <img src={Vul} className="front" />
+                    {/* <img src={Vul} className="front" /> */}
                 </div>
                 <div className="rightListItems">
                     <h2>Threat intelligence Detection</h2>
@@ -113,13 +134,13 @@ const HomePage = ({ activeLink }) => {
                 </div>
                 <div className="leftImageContainer">
                     <img src={Home2Img} className="back" />
-                    <img src={Vul2} style={{ left: '-2%' }} className="front" />
+                    {/* <img src={Vul2} style={{ left: '-2%' }} className="front" /> */}
                 </div>
             </div>
             <div className="advSection">
                 <div className="adv">
                     <div className="leftImageContainer">
-                        <img src={Laptop} />
+                        <img src={Laptop}  className="back" />
                     </div>
                     <div className="rightItems">
                         <div>
@@ -129,15 +150,22 @@ const HomePage = ({ activeLink }) => {
                     </div>
                 </div>
                 <div className="cardContainer">
-                    {HOMEPAGE_CARD2.map(({title, desc}) => {
+                    {HOMEPAGE_CARD2.map(({title, desc}, index) => {
                         return (
-                            <div className="card">
+                            <div className={c({ selected: index === selectedBtm}, "card")}>
                                 <h3>{title}</h3>
                                 <div>{desc}</div>
                             </div>
                         )   
                     })}
                 </div>
+                <div className="selectBtn">{HOMEPAGE_CARD2.map((_, i) => {
+                return (
+                    <span onClick={() => setSelectedBtm(i)}>
+                        <img src={i === selectedBtm ? SelectedDot : Dot } />
+                    </span>
+                )
+            })}</div>
             </div>
             <div className="bannerSection">
                 <h2>{SUPERCHARGE_HEAD_TXT}</h2>
