@@ -38,7 +38,9 @@
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "enzyme": "^3.11.0",
+    "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jest": "^27.6.3",
     "husky": "^2.4.1",
     "jest-junit": "^9.0.0",
     "lint-staged": "^15.1.0",
