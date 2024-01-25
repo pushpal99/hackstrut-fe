@@ -50,12 +50,13 @@
 @media screen and (min-width: 100px) and (max-width: 768px) {
    .footer {
         width: 100% !important;
-        height: 55vh;
+        // height: 55vh;
         display: block;
-        // flex-direction: column;
         .left {
             width: 50%;
             float: left;
+            margin: 0;
+            padding: 0;
             .mediaLink {
                 display: flex;
                 flex-direction: column;
@@ -67,20 +68,22 @@
         .right {
             width: 50%;
             float: left;
+            margin: 0;
+            padding: 0;
         }
         .quickLinks{
             flex-direction: column;
             div {
-                margin: 1vh 0;
+                margin: 1.5vh 0;
             }
         }
         .newsLetter {
             float: left;
             clear: both;
-            margin-top: 2vh;
+            margin: 2vh 0;
             width: 90%;
             input {
-                width: 90%;
+                width: 88%;
             }
         }
    }

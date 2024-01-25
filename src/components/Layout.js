@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NAV_LINKS } from '../utils/constants';
 import Logo from '../assets/Layout/logo.svg'
 import Close from '../assets/Layout/Close.png';
@@ -8,6 +8,9 @@ import './index.scss'
 
 const Layout = ({ activeLink, setActiveLink}) => {
     const [open, setOpen] =useState(false);
+    useEffect(() => {
+        setOpen(false)
+    }, [activeLink])
     return (
         <div className='nav'>
             <ul className='clearfix'>

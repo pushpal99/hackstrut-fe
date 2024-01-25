@@ -1,6 +1,6 @@
 .nav {
     margin: 0;
-    padding: 0;
+    padding: 1vh 0;
     background: rgba(10, 10, 10, 0.4);
     position: fixed;
     top: 0;
@@ -25,7 +25,6 @@
             width: 8%;
             margin: 1vh 0;
             .button {
-                // display: inline-flex;
                 border: 1px solid #54C9F8;
                 border-radius: 10px;
                 text-align: center; 
@@ -33,7 +32,6 @@
                 line-height: 3vh;
                 color: #ffffff;
                 padding: 0.5vh 1vw;
-                // margin: 1.5vh 0;
             }
         }
         .dropDown {
@@ -44,7 +42,6 @@
             padding: 0 1vw;
             &.active {
                 color: #ffffff;
-                // border-bottom: 2px solid #ffffff;
                 &::after {
                     content: '';
                     background: #ffffff;
@@ -67,70 +64,14 @@
 //mediaquery
 
 @media screen and (min-width: 100px) and (max-width: 768px) {
-    body {
-        overflow-x: hidden !important;
-    }
     .nav {
-        width: 100%;
-        overflow-x: hidden !important;
-        position: fixed;
-        // margin: 0;
-        // padding: 0;
-        // background: rgba(10, 10, 10, 0.4);
-        // position: fixed;
-        top: 0;
-        // width: 100%;
-        // z-index: 10;
         .clearfix {
-            // justify-content: space-between;
-            // align-items: center;
-            // width: 100%;
-            // list-style: none;
-            // display: inline-flex;
-            // margin: 0 3vw;
-            // padding: 0;
-            // line-height: 5vh;
-            // font-size: 1.8vh;
-    
-            // .company {
-            //     width: 10%;
-            //     img {
-            //         height: 4vh;
-            //     }
-            // }
             .buttonItem {
                 display: none;
-                // width: 8%;
-                // margin: 1vh 0;
-                // .button {
-                //     border: 1px solid #54C9F8;
-                //     border-radius: 10px;
-                //     text-align: center; 
-                //     height: 3vh; 
-                //     line-height: 3vh;
-                //     color: #ffffff;
-                //     padding: 0.5vh 1vw;
-                // }
             }
-            // li {
-            //     color: #007CAE;
-            //     padding: 0 1vw;
-            //     &.active {
-            //         color: #ffffff;
-            //         // border-bottom: 2px solid #ffffff;
-            //         &::after {
-            //             content: '';
-            //             background: #ffffff;
-            //             display: block;
-            //             height: 2px;
-            //             width: 20px;
-            //             padding-left: 1vw;
-            //         }
-            //     }
-            // }
             .dropDown {
                 display: block;
-                margin: 1% 8%;
+                padding: 1% 7%;
                 position: absolute;
                 right: 0;
                 z-index: 3;
@@ -150,18 +91,11 @@
                     z-index: 2;
                     padding: 5vh 1vw;
                     li {
-                        // height: rem(4);
                         margin: 1vh 5vw;
                         &.active {
                             color: #B0E6FC;
-                            // border-bottom: 2px solid #ffffff;
                             &::after {
-                                // content: '';
-                                // background: #ffffff;
                                 display: none;
-                                // height: 2px;
-                                // width: 20px;
-                                // padding-left: 1vw;
                             }
                         }
                     }
@@ -170,9 +104,3 @@
         }
     }
   }
-
-
-//    /* Small Devices, Tablets */
-//    @media only screen and (min-width : 768px) {
-
-//    }

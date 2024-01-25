@@ -19,6 +19,7 @@
     "lodash": "^4.17.20",
     "moment": "^2.29.0",
     "moment-timezone": "^0.5.42",
+    "netlify-cli": "^17.15.2",
     "prop-types": "^15.7.2",
     "react": "^18.2.0",
     "react-beautiful-dnd": "^13.1.0",
