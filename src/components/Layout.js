@@ -14,7 +14,7 @@ const Layout = ({ activeLink, setActiveLink}) => {
     return (
         <div className='nav'>
             <ul className='clearfix'>
-                <li className='company'>
+                <li className='company' onClick={() => setActiveLink(0)}>
                     <img src={Logo} />
                 </li>
                 <li className='dropDown' onClick={() => setOpen(!open)}>

@@ -120,7 +120,7 @@ const HomePage = ({ activeLink }) => {
                 </div>
             </div><div className="midSection wrapper bottom">
                 <div className="rightListItems">
-                    <h2>Vulnerbility Detection</h2>
+                    <h2>Vulnerability Detection</h2>
                     <ul>
                         {VULNERABILITY_OPT.map(({ title, imgSrc }) => {
                             return (

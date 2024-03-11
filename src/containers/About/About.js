@@ -104,7 +104,7 @@ const About = () => {
             </div>
             <h4>{PHOTO_TAG}</h4>
             <div className="photoInfo">{ABOUT_SUB_INFO_3}</div>
-            <div><span><img src={linkdInIcon} /></span></div>
+            <div className="linkdinIcon"><a href="https://www.linkedin.com/in/francis-cordor-96a40338"><img src={linkdInIcon} /></a></div>
         </div>
    </div>
     )
