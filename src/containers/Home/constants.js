@@ -56,15 +56,15 @@ export const SITE_TEXT = {
     ],
     VULNERABILITY_OPT: [
         {
-            title: 'Vulnerbility Scanning',
+            title: 'Vulnerability Scanning',
             imgSrc: ScanIcon,
         },
         {
-            title: 'Vulnerbility Prioritization',
+            title: 'Vulnerability Prioritization',
             imgSrc: PrioritizationIcon,
         },
         {
-            title: 'Vulnerbility Prioritization',
+            title: 'Vulnerability Prioritization',
             imgSrc: Remediation,
         },
     ],
